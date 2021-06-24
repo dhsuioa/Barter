@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-menu">
+        <a href="#" class="navbar-brand">Barter</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <ul class="menu-list">
+              <li><a href="#" id="services-link">Услуги</a></li>
+              <li><a href="#" id="flea-market-link">Барахолка</a></li>
+              <li><a href="#" id="login-link">Войти</a></li>
+          </ul>
+    </nav>
+    
+    <section class="page main-page">
+        <div class="page-content">
+            <h1>Сайт по обмену услуг и вещей на бартерной основе</h1>
+            <p>Идея сайта заключается в том чтобы люди могли обмениваться своими услугами без денег.
+               Позже было добавлена возможность обмена вещей и барахолка.
+               Сайт будет работать на основе анкет в которых люди буду прописывать свои возможности и умения.
+               Тем самым человек может посмотреть какой он услугой может воспользоваться, а какую предложить в замен.
+               Что бы обмен производился правильно и равноценно будет система оценивая услуги в условных баллах, 
+               тем самым можно уровнять услуги по значимости.</p>
+            <div class="control">
+               <button id="start-btn">Узнать подробнее</button>
+           </div>
+        </div>
+   </section>
+
+   <section class="page promo">
+    <div class="page-content2">
+        <h2>Что отличает нас от конкурентов?</h2>
+        <div class="concept">
+            <div class="concept-list">
+                <img src="https://image.flaticon.com/icons/png/512/711/711232.png" alt="wallet"> 
+                <div class="concept-text">
+                    <h3>Безденежный обмен</h3>
+                    <p>Существенным отличием будет являться наличие безденежного обмена услугами и вещами, которые оцениваются в условных баллах.</p>
+                </div>
+            </div>
+            <div class="concept-list">
+                <img src="https://image.flaticon.com/icons/png/512/839/839986.png" alt="document">
+                <div class="concept-text">
+                    <h3>Информативные анкеты</h3>
+                    <p>Более информативные и подробные анкеты, чем у таких конкурентов как Avito и Barter, которые облегчат поиск нужного товара и сэкономят время.</p>
+                </div>
+            </div>
+            <div class="concept-list">
+                <img src="https://image.flaticon.com/icons/png/512/681/681494.png" alt="people">
+                <div class="concept-text">
+                    <h3>Прозрачность сделки</h3>
+                    <p>Также при обмене люди могут видеть, что предлагает покупатель и продавец и что еще они могут предложить друг другу.</p>
+                </div>
+            </div>
+            <div class="concept-list">
+                <img src="https://image.flaticon.com/icons/png/512/522/522510.png" alt="briefcase">
+                <div class="concept-text">
+                    <h3>Многофункциональный личный кабинет</h3>
+                    <p>Личный кабинет позволит клиенту наглядно видеть весь список своих товаров и услуг, а также их динамику. Отдельная вкладка с историей обмена и копией электронных договоров подтверждает безопасность и прозрачность нашего сервиса.</p>
+                </div>
+            </div>
+            <div class="concept-list">
+                <img src="https://image.flaticon.com/icons/png/512/786/786331.png" alt="star">
+                <div class="concept-text">
+                    <h3>Система оценивания продавца</h3>
+                    <p>Также на сайте реализована система оценивания, которая складывается из оценки других пользователей и влияет на продвижение услуги в общем списке предложений.</p>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+           <button  data-toggle="modal" data-target="#exampleModal">
+               Зарегистрироваться
+            </button>
+       </div>
+    </div>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="form-order">
+              <label class="form-label">
+                  ФИО
+                  <input type="text" name="fio" class="form-control">
+              </label>
+
+              <label class="form-label">
+                  Телефон
+                  <input type="text" name="phone" class="form-control">
+              </label>
+
+              <label class="form-label">
+                Почта
+                <input type="text" name="mail" class="form-control">
+            </label>
+
+              <label for="select-qualifications"></label>
+              <select name="qualifications" id="select-qualifications" class="form-select" aria-label="Default select example">
+                <option selected>Чем вы занимаетесь?</option>
+                <option value="repair">Ремонт</option>
+                <option value="training">Обучение</option>
+                <option value="cleaning">Уборка</option>
+                <option value="transportation">Перевозка</option>
+                <option value="advertising">Реклама</option>
+                <option value="other">Другое</option>
+              </select>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button data-dismiss="modal" class="btn-selector">Закрыть</button>
+          <button id="btn-order" class="btn-selector">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
