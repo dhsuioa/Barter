@@ -53,12 +53,6 @@ button:active {
     box-shadow: inset 0px 0px 3px 0px black;
 }
 
-.container {
-    margin: 0 auto;
-    min-width: 350px;
-    max-width: 800px;
-}
-
 .control {
     display: flex;
     justify-content: center;
@@ -70,22 +64,14 @@ button:active {
     }
 }
 
-.control button {
-
-}
-
-.page {
-    /*position: relative; */
-   /* height: 100vh; */
-}
 
 .page-content {
-    /*position: absolute; */
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #d9d5d5;
+    background-image: url(https://www.tretyakovgallery.ru/upload/iblock/02e/0innzjkg0pw0gvfjz78kd3e6t2wjmgvb.jpg);
+    
     padding: 5%;
     display: flex;
     justify-content: center;
@@ -189,7 +175,7 @@ button:active {
 }
 
 .page-content2 {
-    /*position: absolute; */
+
     top: 0;
     left: 0;
     bottom: 0;
@@ -229,3 +215,28 @@ button:active {
     display: flex;
     flex-direction: column;
 }
+
+
+
+ .form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
+  
+  .thrid-headers {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
